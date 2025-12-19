@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f1b0b0d2;
+        }
+
+     
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            margin: 10px 0 5px;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        .product button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            border: none;
+            background: #222;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .product button:hover {
+            background: #444;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+
+<header>
+    <h1>Car Shop</h1>
+    <p>Best affordable Cars</p>
+</header>
+
+<div class="product">
+        <img src="https://images.topgear.com.ph/topgear/images/2023/04/08/paul-walker-r34-skyline-gt-r-9-1680919281.jpg" alt="Product">
+        <h3>Nissan Skyline GT-R R3</h3>
+        <h6>RB26DETT 2.6L twin-turbo inline-6 engine, officially rated at 276-280 hp</h6>
+        <p class="price">$100,000</p>
+        <button><a href="index.html">Buy Now</a></button>
+    </div>

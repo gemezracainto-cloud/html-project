@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple Shop</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f1b0b0d2;
+        }
+
+     
+        header {
+            background: #222;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding: 20px;
+        }
+
+        .product {
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product h3 {
+            margin: 10px 0 5px;
+        }
+
+        .price {
+            color: green;
+            font-weight: bold;
+        }
+
+        .product button {
+            margin-top: 10px;
+            padding: 8px 12px;
+            border: none;
+            background: #222;
+            color: white;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+
+        .product button:hover {
+            background: #444;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background: #222;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+
+<header>
+    <h1>Car Shop</h1>
+    <p>Best affordable Cars</p>
+</header>
+
+    <div class="product">
+        <img src="https://www.insidehook.com/wp-content/uploads/2023/10/ford-f-150-raptor-r-review.jpg?fit=1200%2C8000" alt="Product">
+        <h3>Ford F-150</h3>
+        <h6>engines from a 2.7L EcoBoost V6 (325hp/400lb-ft) to a supercharged 5.0L V8 in the Raptor R (720hp), plus a powerful PowerBoost Hybrid (430hp/570lb-ft) and the all-electric Lightning</h6>
+        <p class="price">$80,000</p>
+        <button><a href="contact_2.html">Buy Now</a></button>
+    </div>
